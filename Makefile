@@ -22,9 +22,9 @@ gh-pages :
 	basename `pwd` | grep -q build || exit 1
 	rm -f .git/hooks/pre-push
 	git checkout -b gh-pages
-	git add -f Makefile *.html *.txt *.svg
+	git add -f Makefile *.html *.md
 	git commit -m "this is a temporary branch, do not commit here."
-	git push -f --set-upstream origin gh-pages
+	git push -f origin gh-pages:gh-pages
 
 clean :
 	rm -rf build
