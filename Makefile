@@ -2,7 +2,7 @@ SOURCES = index.md privacy.md
 
 PAGES = $(SOURCES:%.md=%/index.html)
 
-all : $(PAGES) index.html hooks
+all : $(PAGES) index.html
 
 %/index.html : %.md template.html Makefile
 	dirname $@ | xargs -n 1 mkdir -p
@@ -14,14 +14,20 @@ index.html : index/index.html
 clean :
 	rm -f $(PAGES) index.html
 
-hooks : .git/hooks/pre-push
+deploy : all
+	(git branch -D gh-pages || true) &> /dev/null
+	rm -rf build && mkdir -p build
+	cp -a Makefile .git *.md template.html build
+	make -C build gh-pages
+	rm -rf build
 
-.git/hooks/% : Makefile
-	echo "#!/bin/sh" > $@
-	echo "make `basename $@`" >> $@
-	chmod 755 $@
+gh-pages : all
+	basename `pwd` | grep -q build || exit 1
+	rm -f .git/hooks/pre-push
+	git checkout -b gh-pages
+	git add -f index.html $(PAGES)
+	git commit -m "this is a temporary branch, do not commit here."
+	git push -f origin gh-pages:gh-pages
 
-pre-push : all
-
-.PHONY : all clean hooks deploy pre-push
+.PHONY : all clean deploy
 
