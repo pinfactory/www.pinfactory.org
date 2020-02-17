@@ -8,9 +8,6 @@ all : $(PAGES) index.html hooks
 	dirname $@ | xargs -n 1 mkdir -p
 	pandoc --section-divs -t html5 --template template.html -s -o $@ $< 
 
-clean :
-	rm -f $(PAGES) index.html
-
 index.html : index/index.html
 	cp $< $@
 
@@ -31,6 +28,7 @@ gh-pages :
 
 clean :
 	rm -rf build
+	rm -f $(PAGES) index.html
 	git branch -D gh-pages || true
 
 hooks : .git/hooks/pre-push

@@ -2,15 +2,42 @@
 % Don Marti
 % 2020
 
-Demos are hard.  They take a long time to set up, you have to reconfigure them for last-minute software changes, and somehow, demos seem to break anyway.  Time to change that.  The good news is that software developers have figured most of this out already.
+Developers would prefer to release software at a
+high quality level. Users prefer to use software at a
+high quality level. However, firms are incentivized
+to release software at a lower quality level than
+would be chosen by either developers or users.
 
-This talk will cover the basics of turning your software demo into a software project. We’ll cover how to save time, reduce risk, and increase a demo’s socks-knocking-off factor by using version control, test-driven development, and other stuff borrowed from “real” software work.
+Pinfactory is a system, based on a futures market,
+that lets users quantify and hedge the risks of
+low-quality software, while compensating developers
+to do the extra work to bring the software up to a
+higher quality level.
 
-We’ll use the system package manager to create demo packages with sample data and setup/teardown scripts, along with Docker for building demo containers and Capstan to build run-anywhere VMs.  And we’ll finish up with a compendium of embarrassing demo stories and how we prepare to avoid those situations in the future.
+The main idea is to introduce price
+signals into the peer production of software. This
+is achieved through a trading market for futures
+contracts on the status of software issues. Users,
+who value secure software, gain the possibility to
+predict outcomes and incentivize work, strengthening
+collaboration and information sharing in open
+source software development. 
+
+## Research funding
+
+This software is an open source
+implementation of a market design research
+project described in [A market for trading software
+issues](https://academic.oup.com/cybersecurity/article/5/1/tyz011/5580665).
+This work has been funded by the Alfred
+P. Sloan Foundation Digital Technology grant
+on Open Source Health and Sustainability
+(https://sloan.org/grant-detail/8434). Funding for
+open access publishing of the paper was provided
+by the University of Nebraska at Omaha Libraries'
+Open Access Fund.
 
 
-
-GitHub as workshop archive:
-https://github.com/deanwampler/spark-workshop#master
+[More info: market for trading software issues | Journal of Cybersecurity](https://academic.oup.com/cybersecurity/article/5/1/tyz011/5580665)
 
 
