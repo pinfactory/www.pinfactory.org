@@ -11,25 +11,8 @@ all : $(PAGES) index.html hooks
 index.html : index/index.html
 	cp $< $@
 
-deploy : all
-	(git branch -D gh-pages || true) &> /dev/null
-	rm -rf build && mkdir -p build
-	cp -a Makefile .git *.md template.html build
-	make -C build gh-pages
-	rm -rf build
-
-gh-pages :
-	basename `pwd` | grep -q build || exit 1
-	rm -f .git/hooks/pre-push
-	git checkout -b gh-pages
-	git add -f Makefile *.html *.md
-	git commit -m "this is a temporary branch, do not commit here."
-	git push -f origin gh-pages:gh-pages
-
 clean :
-	rm -rf build
 	rm -f $(PAGES) index.html
-	git branch -D gh-pages || true
 
 hooks : .git/hooks/pre-push
 
@@ -38,7 +21,7 @@ hooks : .git/hooks/pre-push
 	echo "make `basename $@`" >> $@
 	chmod 755 $@
 
-pre-push : deploy
+pre-push : all
 
 .PHONY : all clean hooks deploy pre-push
 
