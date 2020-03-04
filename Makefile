@@ -26,6 +26,7 @@ gh-pages : all
 	rm -f .git/hooks/pre-push
 	git checkout -b gh-pages
 	git add -f index.html $(PAGES)
+	git rm *.md
 	git commit -m "this is a temporary branch, do not commit here."
 	git push -f origin gh-pages:gh-pages
 
