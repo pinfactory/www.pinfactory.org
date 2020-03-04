@@ -1,4 +1,4 @@
-SOURCES = index.md privacy.md
+SOURCES = index.md privacy.md people.md
 
 PAGES = $(SOURCES:%.md=%/index.html)
 
