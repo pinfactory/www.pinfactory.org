@@ -14,6 +14,13 @@ low-quality software, while compensating developers
 to do the extra work to bring the software up to a
 higher quality level.
 
+<hr>
+<figure>
+<img width="100%" src="i/screenshot.png" alt="Pinfactory screenshot">
+<figcaption>The Pinfactory application. This screen shows positions currently held by the user.</figcaption>
+</figure>
+<hr>
+
 The main idea is to introduce price
 signals into the peer production of software. This
 is achieved through a trading market for futures
