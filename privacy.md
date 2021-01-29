@@ -5,14 +5,15 @@
 
 Pinfactory websites (collectively Pinfactory
 in this document) refer to sites hosted on the
-pinfactory.ca domain, including www.pinfactory.ca and
-market.pinfactory.ca.  This privacy policy describes
+pinfactory.org domain, including www.pinfactory.org and
+market.pinfactory.org.  This privacy policy describes
 how Pinfactory uses and protects any information that
 you give us. We are committed to ensuring that your
 privacy is protected. If you provide us with personal
 information, you can be assured that it will only
 be used in accordance with this privacy statement.
-Website Visitors
+
+## Website Visitors
 
 Like most website operators, Pinfactory collects
 non-personally-identifying information of the
@@ -147,6 +148,7 @@ If you would like to request deletion of your account and associated data, pleas
 
  * Send email to Don Marti at dmarti@zgp.org
 
+
 ## Rights in relation to your information
 
 You may have certain rights under data protection law in relation to the personal information we hold about you. In particular, you may have a right to:
@@ -159,7 +161,7 @@ You may have certain rights under data protection law in relation to the persona
 
  * object to our processing of your personal information; and/or
  
- *withdraw your consent to our processing of your personal information (to the extent such processing is based on consent and consent is the only permissible basis for processing).
+ * withdraw your consent to our processing of your personal information (to the extent such processing is based on consent and consent is the only permissible basis for processing).
 
 If you would like to exercise these rights or understand if these rights apply to you, please follow the instructions at the end of this Privacy statement.
 
@@ -178,7 +180,8 @@ Our website may contain features that allow you to sign in using other websites 
 ## Aggregated Statistics
 
 Pinfactory may collect statistics about the behavior of visitors to its websites. For instance, Pinfactory may reveal trading activity on a particular contract, issue, or project. However, Pinfactory does not disclose personally-identifying information other than as described in this policy.
-Cookies
+
+## Cookies
 
 Additionally, information about how you use our website is collected automatically using “cookies”. Cookies are text files placed on your computer to collect standard internet log information and visitor behaviour information. This information is used to track visitor use of the website and to compile statistical reports on website activity.
 
