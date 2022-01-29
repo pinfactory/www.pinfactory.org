@@ -46,7 +46,7 @@ Open Access Fund.
 
 ## References
 
-[A market for trading software issues | Journal of Cybersecurity](https://academic.oup.com/cybersecurity/article/5/1/tyz011/5580665)
+[A market for trading software issues](https://academic.oup.com/cybersecurity/article/5/1/tyz011/5580665)
 
 [A trading market to incentivize secure software](https://weis2018.econinfosec.org/wp-content/uploads/sites/5/2016/09/WEIS_2018_paper_27.pdf)
 
