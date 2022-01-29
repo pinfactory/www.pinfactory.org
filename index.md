@@ -44,6 +44,10 @@ by the University of Nebraska at Omaha Libraries'
 Open Access Fund.
 
 
-[More info: market for trading software issues | Journal of Cybersecurity](https://academic.oup.com/cybersecurity/article/5/1/tyz011/5580665)
+## References
 
+[A market for trading software issues | Journal of Cybersecurity](https://academic.oup.com/cybersecurity/article/5/1/tyz011/5580665)
 
+[A trading market to incentivize secure software](https://weis2018.econinfosec.org/wp-content/uploads/sites/5/2016/09/WEIS_2018_paper_27.pdf)
+
+[Marktplatz zur Koordinierung und Finanzierung von Open Source Software | SpringerLink](https://link.springer.com/article/10.1365/s40702-018-00474-6)
