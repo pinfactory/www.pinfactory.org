@@ -38,8 +38,7 @@ project described in [A market for trading software
 issues](https://academic.oup.com/cybersecurity/article/5/1/tyz011/5580665).
 This work has been funded by the Alfred
 P. Sloan Foundation Digital Technology grant
-on Open Source Health and Sustainability
-(https://sloan.org/grant-detail/8434). Funding for
+on [Open Source Health and Sustainability](https://sloan.org/grant-detail/8434). Funding for
 open access publishing of the paper was provided
 by the University of Nebraska at Omaha Libraries'
 Open Access Fund.
