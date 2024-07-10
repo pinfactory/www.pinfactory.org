@@ -1,8 +1,10 @@
 SOURCES = index.md privacy.md
-
+IMAGES=$(shell find i -type f)
 PAGES = $(SOURCES:%.md=%/index.html)
 
 all : $(PAGES) index.html
+
+PUBLICFILES = $(PAGES) $(IMAGES) index.html
 
 %/index.html : %.md template.html Makefile
 	dirname $@ | xargs -n 1 mkdir -p
@@ -32,8 +34,8 @@ gh-pages : all
 	basename `pwd` | grep -q build || exit 1
 	rm -f .git/hooks/pre-push
 	git checkout -b gh-pages
-	git add -f index.html $(PAGES) i/*
-	git rm -f *.md
+	git rm -f $(SOURCES)
+	git add -f $(PUBLICFILES)
 	git commit -m "this is a temporary branch, do not commit here."
 	git push -f origin gh-pages:gh-pages
 
